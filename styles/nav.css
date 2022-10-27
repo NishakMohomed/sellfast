@@ -1,0 +1,165 @@
+nav{
+    background-color: #2275BE;
+    height: 100px;
+    padding: 5px 160px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul a, nav ul a:hover{
+    color: #fff;
+}
+
+nav .navItem{
+    justify-content: space-between;
+    display: flex;
+}
+
+nav .navMenuIcon{
+    display: none;
+    cursor: pointer;
+}
+
+nav .navItemRight{
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+nav .navItemLeft{
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+nav .navItemLeft .langBtn{
+    border: 1px solid #fff;
+}
+
+nav .navItemLeft .langBtn.sin{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+nav .navItemLeft .langBtn.tam{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+nav .navItemLeft li a{
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+}
+
+nav .navItemRight li a{
+    padding: 10px;
+}
+
+nav .logo a{
+    margin-right: 10px;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 0;
+}
+
+nav .logo a span{
+    color: #FAC23B;
+}
+
+nav .chatBtn a, nav .loginBtn a{
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+nav ul .postBtn{
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    background-color: #4C46A8;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
+/* Nav bar hidden */
+
+nav .hiddenNavBar{
+    display: none;
+}
+
+nav .hiddenNavBar.view{
+    display: block;
+    background-color: #424e4e;
+    transition: all 5s;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 80%;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+}
+
+.hiddenNavBar .hiddenNavHeader{
+    width: 100%;
+    height: 20vh;
+}
+
+.hiddenNavBar .hiddenNavLogo .closeBtn{
+    vertical-align: middle;
+    float: right;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.hiddenNavBar .hiddemNavBarLinks a{
+    display: block;
+    color: #afb7ad;
+    font-size: 15px;
+    padding: 15px 20px;
+}
+
+.hiddenNavBar .hiddemNavBarLinks .linkHr{
+    border-bottom: 1px solid #afb7ad;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+    nav{
+        padding: 5px 100px;
+    }
+    
+}
+
+
+@media screen and (max-width: 992px) {
+
+    nav{
+        padding: 5px 10px;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .chatBtn span, .loginBtn span, .postBtn, .langBtn{
+        display: none;
+    }
+
+    nav .navMenuIcon{
+        display: block;
+    }
+    
+}
+

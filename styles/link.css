@@ -1,0 +1,48 @@
+.link_container{
+    padding: 30px 200px;
+}
+
+.link_container .heading{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.link_container .card{
+    background: #f3f6f5;
+    min-height: 150px; 
+    padding: 8px 8px;
+    border-radius: 8px;
+}
+
+.link_container .card_text{
+    text-align: left;
+}
+
+.link_container .card_text p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #2f3432;
+}
+
+.link_container .card_text span a{
+    font-size: 13px;
+    color: #424e4e;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .link_container{
+        padding: 30px 100px;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+
+    .link_container{
+        padding: 30px 10px;
+    }
+    
+}
